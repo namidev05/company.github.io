@@ -1,6 +1,2 @@
-# company.github.io
-# company.github.io
-# company.github.io
-# company.github.io
-# company.github.io
-# company.github.io
+not yet finished!
+
