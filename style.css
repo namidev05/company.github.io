@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 .container{
     color: #000;
@@ -9,7 +10,7 @@
 }
 .topss{
     width: 100%;
-    background-color: #0000000d;
+    background-color: #53505008;
 }
 .tops{
     width: 70%;
@@ -26,10 +27,10 @@
 label{
     color: blue;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .tops a{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .right i{
     margin-right: 10px;
@@ -41,7 +42,7 @@ label{
     height: 30px;
     width: 100%;
     
-    padding: .5rem;
+    padding: .2rem;
  
 }
 
@@ -53,7 +54,6 @@ label{
     margin-right: 40px;
     cursor: pointer;
     display: none;
-  
 }
 #check{
     display: none;
@@ -76,56 +76,60 @@ label{
     font-weight: 700;
     color: #000;
     text-decoration: none;
-    padding: 7px 10px;
+    padding: 5px 10px;
     text-transform: uppercase;
     border-radius: 10px;
 }
 
 a.active,a:hover{
-    background: #00bcd40f;
+    /*background: #00bcd40f;*/
     transition: .5s;
 }
 
 
 .logo{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
     margin-left: 190px;
     letter-spacing: 2px;
 }
 .content{
-    margin: 0 auto 0 auto;
     width: 100%;
-    height: 450px;
-    background-color: #285fb1d4;
-    color: #fff;
-    /*background-image: url("images/cp.jpg");
-    box-sizing: border-box;
-    background-position: center;
+    height: 88vh;
+    /*background-color: #285fb1d4;
+    color: #fff;*/
+    background-image: url("images/bg.jpg");
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    z-index: -1;
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: 100% 100%;
     text-align: center;
+    color: #fff;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    position: relative;
 }
+
 .content1{
     width: 80%;
     margin: 0 auto;
    
 }
-
 .content h1{
-    padding-top: 100px;
+    padding-top: 80px;
     font-weight: 900;
     z-index: 1000;
-    color: #fff;
-    font-size: 3rem;
+    
+    
+    font-size: 3.5rem;
+    z-index: 1000;
    
     
 }
 .content p{
     margin: 0 auto;
-    width: 50%;
-    color: #fff;
+    width: 60%;
+    
     font-size: 1.2rem;
     padding: 1rem 0;
 
@@ -134,7 +138,7 @@ a.active,a:hover{
 .btn{
     padding: .2rem 1rem;
     margin-top: .2rem;
-    background-color: burlywood;
+    background-color: #fff;
     border-radius: 15px 50px;
     
 }
@@ -142,20 +146,25 @@ a.active,a:hover{
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
+    background-color: #53505008;
+    
 }
 .services{
     text-align: center;
     margin: 1em auto;
+    
 }
 .services h4{
     font-size: 2rem;
     font-weight: 800;
     letter-spacing: 2px;
+    padding-top: 1em;
+    text-transform: uppercase;
 }
 .services p{
     font-size: 1.2rem;
     width: 70%;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 .wrap{
     width: 70%;
@@ -174,7 +183,8 @@ a.active,a:hover{
     margin-top: 1rem;
     width: 80px;
     height: 80px;
-    background-color: aquamarine;
+    background-color:  #53505008;
+    border: 2px solid #000;
     border-radius: 50%;
     margin-bottom: 1em;
    
@@ -183,6 +193,7 @@ h2{
     font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 1px;
+    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 .pp{
@@ -195,8 +206,8 @@ h2{
 
 .third{
     height: 80vh;
-    color: #fff;
-    background-color: #285fb1d4;
+    color: #000;
+    background-color:  #fff;
 }
 .third1{
     width: 70%;
@@ -211,6 +222,7 @@ h2{
     font-weight: 900;
     letter-spacing: 2px;
     padding: 1em 0 1rem 1em;
+    text-transform: uppercase;
 }
 .about p{
     font-size: 1.2rem;
@@ -229,10 +241,11 @@ h2{
     font-weight: 900;
     letter-spacing: 2px;
     padding: 1em 0 1rem 1em;
+    text-transform: uppercase;
 }
 .mission p{
     font-size: 1.2rem;
-    font-weight: 5  00;
+    font-weight: 500;
     padding: 0 0 1rem 1em;
     margin-right: 30%;
     
@@ -240,8 +253,11 @@ h2{
 
 .awesome{
     text-align: center;
-    margin: 1rem auto;
+    margin: 0 auto;
+    padding-top: 1rem;
     text-transform: uppercase;
+    width: 100%;
+    
 }
 .awesome h5{
     font-size: 2rem;
@@ -252,10 +268,14 @@ h2{
 
 
 .environment{
+    
+    background-color:  #53505008;
+    
+}
+.enviroment-wrap{
     width: 70%;
     margin: 0 auto;
 }
-
 .what{
     padding: 1em 1em 0 1em;
     margin-left: 30%;
@@ -298,23 +318,25 @@ h2{
 .partner{
     width: 100%;
     height: 65vh;
-    background-color: #285fb1d4;
+    background-color:  rgb(68, 58, 58);
     text-align: center;
+    color: #fff;
 }
 .partner h6{
-    margin: 1rem auto;
+    margin: 1 auto;
     padding-top: 3rem;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    
 }
 .partner p{
-    margin: 0 auto;
+    margin: 1rem auto;
     font-size: 1.2rem;
     width: 70%;
 }
 .partner1{
-    margin: 2rem auto;
+    margin: 3rem auto;
     width: 70%;
     display: flex;
     justify-content: space-around;
@@ -390,6 +412,7 @@ h2{
 }
 
 
+
 @media (max-width: 952px){
     .logo{
         font-size: 30px;
@@ -442,11 +465,11 @@ h2{
 }
 @media (max-width: 858px){
     .logo {
-        margin-left: 0;
+        margin-left: 10px;
     }
     .checkbtn{
         display: block;
-        margin-right: 30px;
+        margin-right: 20px;
     }
     ul{
         position: fixed;
@@ -473,9 +496,43 @@ h2{
     #check:checked ~ ul{
         left: 0;
     }
+    .content{
+        height: 62vh;
+     
+    }
+    .enviroment-wrap{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contact{
+        width: 100%;
+        height: 75vh;
+        background-color: #fff;
+    }
+    
 
 }
-@media (max-width: 1024px){
+@media (max-width: 1024px)
+    and (min-width: 953px){
+    .content{
+        width: 100%;
+        height: 50vh;
+        /*background-color: #285fb1d4;
+        color: #fff;*/
+        background-image: url("images/bg.jpg");
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+        color: #fff;
+        clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+        position: relative;
+    }
+    .third1{
+        width: 100%;
+        margin: 0 auto;
+    }
     .logo{
        
         margin-left: 100px;
@@ -483,14 +540,48 @@ h2{
     }
     .header ul{
         float: right;
-        margin-right: 100px;     
-       
+        margin-right: 100px;       
+    }
+    .third{
+        height: 38vh;
+        color: #000;
+        background-color:  #fff;
+    }
+    .enviroment-wrap{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .partner{
+        width: 100%;
+        height: 30vh;
+        background-color:  rgb(68, 58, 58);
+        text-align: center;
+        color: #fff;
+    }
+    .contact{
+        width: 100%;
+        height: 80vh;
+        background-color: #fff;
     }
 }
 @media (max-width: 420px){
+   
     .tops{
+        width: 100%;
+        margin: 0 auto;
         height: 50px;
         display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .label1{
+        margin-right: 0px;
+        display: flex;
+    }
+    label{
+        color: blue;
+        font-weight: 800;
+        font-size: 1.2rem;
     }
     .content p{
         width: 90%;
@@ -500,6 +591,14 @@ h2{
         width: 90%;
        
     }
+    .header{
+        height: 35px;
+        width: 100%;
+        
+        padding: .2rem;
+     
+    }
+    
 
     .wrap{
     display: block;
