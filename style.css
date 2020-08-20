@@ -4,10 +4,28 @@
     scroll-behavior: smooth;
 }
 .container{
-    color: #000;
-
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+   
    
 }
+.pocha{
+        /*background-color: #285fb1d4;
+    color: #fff;*/
+    background-image: url("images/bg.jpg");
+    /*box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 75%);*/
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 63%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    /*clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);*/
+    width: 100%;
+    height: 100vh;
+}
+/*
 .topss{
     width: 100%;
     background-color: #53505008;
@@ -20,6 +38,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.tops a{
+    font-size: 1rem;
+}
 .label1{
     margin-right: 0px;
     display: flex;
@@ -29,39 +50,46 @@ label{
     font-weight: 800;
     font-size: 1rem;
 }
-.tops a{
-    font-size: 1rem;
-}
+
 .right i{
     margin-right: 10px;
 }
 .isa{
     margin-left: 20px;
+}*/
+.topsss{
+    width: 100%;
+    height: 1.5em;
+
 }
 .header{
     height: 30px;
     width: 100%;
-    
     padding: .2rem;
- 
+    margin: 0 auto;
+    color: #000;
+    background-color: #ffffff4a;
+    z-index: 1000;
+   
 }
 
 .checkbtn{
     font-weight: 30px;
-    color: #000;
+    color: #fff;    
     float: right;
     line-height: 30px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
 }
+
 #check{
     display: none;
 }
 
 .header ul{
     float: right;
-    margin-right: 200px;     
+    margin-right: 100px;     
    
 }
  ul li{
@@ -74,7 +102,7 @@ label{
  ul li a{
     font-size: 1rem;
     font-weight: 700;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     padding: 5px 10px;
     text-transform: uppercase;
@@ -89,38 +117,27 @@ a.active,a:hover{
 
 .logo{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 900;
-    margin-left: 190px;
+    margin-left: 100px;
     letter-spacing: 2px;
+    color: #fff;
 }
 .content{
     width: 100%;
-    height: 88vh;
-    /*background-color: #285fb1d4;
-    color: #fff;*/
-    background-image: url("images/bg.jpg");
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     text-align: center;
-    color: #fff;
-    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
-    position: relative;
+    
 }
 
 .content1{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
    
 }
 .content h1{
-    padding-top: 80px;
+    padding-top: 90px;
     font-weight: 900;
     z-index: 1000;
-    
-    
     font-size: 3.5rem;
     z-index: 1000;
    
@@ -129,15 +146,15 @@ a.active,a:hover{
 .content p{
     margin: 0 auto;
     width: 60%;
-    
+    line-height: 1.2;
     font-size: 1.2rem;
     padding: 1rem 0;
 
 }
 
 .btn{
-    padding: .2rem 1rem;
-    margin-top: .2rem;
+    padding: .3rem 1.5rem;
+    font-weight: 900;
     background-color: #fff;
     border-radius: 15px 50px;
     
@@ -145,13 +162,14 @@ a.active,a:hover{
 .bottom{
     width: 100%;
     margin: 0 auto;
-    background-color: #fff;
-    background-color: #53505008;
-    
+    background-color: #285fb1d4;
+    color: #fff;
+
 }
 .services{
     text-align: center;
-    margin: 1em auto;
+    margin: 0 auto;
+    
     
 }
 .services h4{
@@ -167,7 +185,7 @@ a.active,a:hover{
     margin: 1rem auto;
 }
 .wrap{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -205,17 +223,28 @@ h2{
 
 
 .third{
-    height: 80vh;
+    height: 85vh;
     color: #000;
-    background-color:  #fff;
+    background-color:  #f4f4f4;
 }
 .third1{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
+.third .about-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.third .about-left{
+    height: 12em;
+    width: 40%;
+    background-color: bisque;
+    margin-right: 2em;
+}
 .third .about{
-    padding: 1em 1em 0 1em;
-    margin-left: 30%;
+    padding: 1em 0 3em 1em;
+    width: 70%;
 }
 .about h3{
     font-size: 1.5rem;
@@ -226,37 +255,47 @@ h2{
 }
 .about p{
     font-size: 1.2rem;
-    font-weight: 5  00;
+    font-weight: 500;
     padding: 0 0 1rem 1em;
 }
 
 
 .third .mission{
-    padding: 1em 1em 0 1em;
-
-    
+    padding: 1em 1em 0 0;
+    width: 70%;
 }
+.third .mission-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+ }
+ .third .mission-right{
+    height: 12em;
+    width: 40%;
+    background-color: bisque;
+}
+
 .mission h3{
     font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 2px;
-    padding: 1em 0 1rem 1em;
+    padding: 1em 0 1rem 0;
     text-transform: uppercase;
 }
 .mission p{
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 0 0 1rem 1em;
-    margin-right: 30%;
-    
+    padding: 0 2em 1rem 0;
 }
 
 .awesome{
     text-align: center;
     margin: 0 auto;
-    padding-top: 1rem;
+    padding-top: 1em;
     text-transform: uppercase;
     width: 100%;
+    margin-bottom: 1.5em;
     
 }
 .awesome h5{
@@ -268,18 +307,32 @@ h2{
 
 
 .environment{
+    height: 85vh;
+    background-color:  #f4f4f4;
     
-    background-color:  #53505008;
-    
+}
+.what-wrap{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1em;
 }
 .enviroment-wrap{
-    width: 70%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.what-wrap .what-left{
+    height: 10em;
+    width: 40%;
+    background-color: bisque;
+    margin-right: 2em;
 }
 .what{
-    padding: 1em 1em 0 1em;
-    margin-left: 30%;
+    padding: 1em 0 0 0;
     color: #000;
+    width: 70%;
+    margin-bottom: 2em;
 }
 .what h3{
     text-transform: uppercase;
@@ -294,10 +347,19 @@ h2{
     padding: 0 0 1rem 1em;
 }
 
-
+.vission-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vission-right{
+    height: 10em;
+    width: 30%;
+    background-color: bisque;
+}
 .vission{
-    padding: 1em 1em 0 1em;
-    
+    padding: 1em 2em 0 1em;
+    width: 70%;
     color: #000;
     
 }
@@ -306,13 +368,13 @@ h2{
     font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 2px;
-    padding: 1em 0 1rem 1em;
+    padding: 1em 0 1rem 0;
 }
 .vission p{
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 0 0 1rem 1em;
-    margin-right: 30%;
+    padding: 0 1rem 1rem 0;
+   
 }
 
 .partner{
@@ -360,8 +422,11 @@ h2{
 
 .contact{
     width: 100%;
-    height: 45vh;
-    background-color: #fff;
+    
+    background-color: #f4f4f4;
+}
+.us{
+    height: 35vh;
 }
 .contact h2{
     text-align: center;
@@ -379,7 +444,7 @@ h2{
 }
 .contact a{
     text-align: center;
-    margin: 3rem auto;
+    margin: 2rem auto;
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
@@ -413,7 +478,9 @@ h2{
 
 
 
-@media (max-width: 952px){
+@media (max-width: 952px)
+    and (min-width: 859px){
+   
     .logo{
         font-size: 30px;
     }
@@ -463,23 +530,32 @@ h2{
         height: 40vh;
     }
 }
-@media (max-width: 858px){
+@media (max-width: 858px)
+{
+    .pp{
+        width: 230px;
+    }
     .logo {
         margin-left: 10px;
+        font-size: 1.8rem;
     }
     .checkbtn{
         display: block;
         margin-right: 20px;
+        margin-top: .3rem;
     }
-    ul{
+    .header ul{
         position: fixed;
         width: 100%;
         height: 100vh;
         background: firebrick;
-        top: 60px;
+        top: 40px;
         text-align: center;
         transition: all .5s;
         left: -100%;
+    }
+    #check:checked ~ .header ul{
+        left: 0;
     }
     ul li{
         display: block;
@@ -493,12 +569,22 @@ h2{
         color: #fff;
     }
 
-    #check:checked ~ ul{
-        left: 0;
-    }
+ 
     .content{
         height: 62vh;
-     
+    }
+    .content1{
+        width: 100%;
+        margin: auto;
+    }
+    .content h1{
+        font-size: 3.5rem;
+        
+    }
+    .content p{
+        font-size: 1.3rem;
+        width: 80%;
+        
     }
     .enviroment-wrap{
         width: 100%;
@@ -509,32 +595,56 @@ h2{
         height: 75vh;
         background-color: #fff;
     }
-    
+    .third1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .third{
+        height: 60vh;
+    }
+    .what-wrap{
+        width: 90%;
+    }
+    .partner{
+        height: 40vh;
+    }
 
 }
 @media (max-width: 1024px)
     and (min-width: 953px){
+    .content p{
+        font-size: 1.8rem;
+        width: 100%;
+    }
+    .content h1{
+        padding-top: 110px;
+    }
+   
+    .header{
+        padding: .5rem;
+    }
     .content{
         width: 100%;
         height: 50vh;
         /*background-color: #285fb1d4;
         color: #fff;*/
-        background-image: url("images/bg.jpg");
-        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-        z-index: -1;
+     
+     
+    
         background-repeat: no-repeat;
         background-size: 100% 100%;
         text-align: center;
         color: #fff;
-        clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+ 
         position: relative;
     }
+   
     .third1{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
     .logo{
-       
+        
         margin-left: 100px;
        
     }
@@ -563,10 +673,14 @@ h2{
         height: 80vh;
         background-color: #fff;
     }
+    .what-wrap{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 420px){
-   
-    .tops{
+ 
+    /*.tops{
         width: 100%;
         margin: 0 auto;
         height: 50px;
@@ -582,7 +696,7 @@ h2{
         color: blue;
         font-weight: 800;
         font-size: 1.2rem;
-    }
+    }*/
     .content p{
         width: 90%;
     }
@@ -590,6 +704,9 @@ h2{
         
         width: 90%;
        
+    }
+    .services{
+        margin: 0;
     }
     .header{
         height: 35px;
@@ -610,24 +727,50 @@ h2{
         padding: 0 0 2rem 0;
         width: 100%;
     }
+
+  
+  
+    .third1{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+    .third .about-wrap{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .third .about-left{
+        height: 10em;
+        width: 50%;
+        background-color: bisque;
+        margin: 0 auto;
+    }
+
+
     .third .about{
-        padding: 1em 1em 0 1em;
+        padding: 1em 1em 0 0;
         margin-left: 0;
+        width: 100%;
     }
+  
+    .about p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0 1em 2em 1em;
+    }
+    
     .third{
-        height: 100vh;
-        color: #fff;
-        background-color: #285fb1d4;
-    }
-    .mission p{
-        
-        padding: 0 0 1rem 1em;
-        margin-right: 0;
+        height: 182vh;
+        color: #000;
+        /*background-color: #285fb1d4;*/
+        padding: 0 1rem 0 1rem;
         
     }
+   
     .awesome{
         text-align: center;
-        margin: 1rem auto;
+        margin: 0 auto;
         text-transform: uppercase;
     }
     .awesome h5{
@@ -637,16 +780,61 @@ h2{
     }
     
     
-    
-    .environment{
+        
+    .third .mission{
+        grid-area: wrap;
+        padding: 0 1rem 0 1rem;
         width: 100%;
+       
+    }
+    .third .mission-wrap{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-areas: 
+            "right"
+            "wrap";
+            width: 100%;
+    }
+    .third .mission-right{
+        grid-area: right;
+        height: 10em;
+        width: 50%;
+        margin: 0 auto;
+        background-color: bisque;
+    }
+    .mission p{
+        width: 90%;
+        font-size: 1.2rem;
+        font-weight: 500;
+   
+    }
+
+    .environment{
+ 
+        padding: 1rem 1rem 0 1rem;
      
     }
-    
+    .enviroment-wrap{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        
+       
+    }
+    .what-wrap .what-left{
+        height: 10em;
+        width: 50%;
+        margin: 0 auto;
+        background-color: bisque;
+
+    }
+    .what-wrap{
+        width: 100%;
+    } 
     .what{
-        padding: 1em 1em 0 1em;
-        margin-left: 0;
+        padding: 1em 0 0 0;
         color: #000;
+        width: 100%;
     }
     .what h3{
         text-transform: uppercase;
@@ -656,10 +844,14 @@ h2{
         padding: 1em 0 1rem 1em;
     }
     .what p{
+        padding: 0 1rem 0 1rem;
         font-size: 1.2rem;
         font-weight: 500;
-        padding: 0 0 1rem 1em;
+   
+        
     }
+        
+    
     
     
     .vission{
@@ -670,27 +862,79 @@ h2{
     }
     .vission h3{
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 900;
         letter-spacing: 2px;
-        padding: 1em 0 1rem 1em;
+        padding: 1em 1em 1rem 1em;
     }
     .vission p{
         font-size: 1.2rem;
         font-weight: 500;
-        padding: 0 0 1rem 1em;
+        padding: 0 0 1rem 0;
         margin-right: 0;
     }
 
+
+
+
+    
+.vission-wrap{
+    display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-areas: 
+            "right"
+            "wrap";
+            width: 100%;
+}
+.vission-right{
+    grid-area: right;
+    height: 10em;
+    width: 50%;
+    margin: 1.5em auto;
+    background-color: bisque;
+}
+.vission{
+    
+
+    grid-area: wrap;
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+    
+}
+.vission h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 1em 0 1rem 0;
+}
+.vission p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 1rem 1rem 0;
+   
+}
+
+
+
+
+
     .partner{
         width: 100%;
-        height: 75vh;
+        height: 70vh;
      
     }
+
+
+
+
+
+
     .partner h6{
-        margin: 1rem auto;
+        padding: 1em 0 1em 0;
+        margin: 0 auto;
         padding-top: 3rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-transform: uppercase;
         letter-spacing: 2px;
     }
@@ -698,21 +942,23 @@ h2{
         margin: 0 auto;
         font-size: 1.2rem;
         width: 90%;
+       
     }
     .partner1{
         margin: 2rem auto;
-        width: 60%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-
-        
+    }
+    .div2 h1{
+        font-size: .8rem;
     }
     
     .partner1 .div1{    
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         background-color: #fff;
         margin: 0 auto;
